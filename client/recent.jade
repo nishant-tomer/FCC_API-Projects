@@ -1,0 +1,11 @@
+doctype html
+html 
+  head
+    title Image Search Recent Queries
+  body
+    - var final = recent
+    - var len = final.length
+    - for (var x = 0; x < len ; x++)
+        p  Search no #{x+1} : <strong> #{final[x]}</strong>
+    
+    

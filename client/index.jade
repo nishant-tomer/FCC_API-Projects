@@ -1,0 +1,39 @@
+doctype html 
+html  
+  head
+    title= title
+    link(href= "css/style.css", rel = "stylesheet")
+  body
+      h3.msg= msg
+      h1.main FreeCodeCamp API Basejump:<br/> Internet Image Search Microservice
+      
+      
+      h3 Use cases:
+      div.stories 
+        p 1) You can search for images on internet and go thorugh your recent searches. 
+        p 2) You will get the image URLs, small bit of information about that image and page urls for a set of images relating to a given search string.
+        p 3) You can paginate through the responses by adding a ?offset=2 parameter to the URL.
+        p Be Careful about putting /search/ after base-url before adding your search string.
+        p Be Careful about putting /recent after base-url for retrieving recent searches.
+      
+      div.examples 
+        h3 Example usage:
+        p https://fccimagesearch-nishant-tomer.c9users.io/search/lolcats funny
+        p https://fccimagesearch-nishant-tomer.c9users.io/recent
+      
+      div.output
+        h3 Example output:
+        p.
+          [<br />{<br />
+            url: "https://i.ytimg.com/vi/8nOsEEBrEuA/hqdefault.jpg",<br />
+            snippet: "LOLCats in All Fired Up lol",<br />
+            thumbnail: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuWNpmeNmLlMNc0v32tK83j4eOrOPVS6M2kty-CVFzQTvbS9d9WdKfrg7E",<br />
+            context: "https://www.youtube.com/watch?v=8nOsEEBrEuA"<br />
+            }, <br /> <br />
+            {<br />
+            url: "http://data.whicdn.com/images/29198044/large.jpg",<br />
+            snippet: "include: cat and funny",<br />
+            thumbnail: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSioF9s2mb9NNZ3w8BZFsaehZB_8iKLcxiUQKvAJak6DagNdu2RzxOwL8A",<br />
+            context: "http://weheartit.com/entry/group/21973537"<br />
+            }<br />
+          ]
