@@ -11,7 +11,7 @@ module.exports = function(app,Mongo){
         var q = req.path.split("/")[3]
         var ip = req.headers['x-forwarded-for'].split(",")[0] || req.connection.remoteAddress
         var scr = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyAqYB_d-3bFU-4VUAf7c1AT_z1dE84BXuI&cx=014756393560842067446:ruuy1nrcksa&q='+q+'&num=10&searchType=image&start='+offset+'&callback=hndlr'
-        var url = process.env.MONGOLAB_CYAN_URI;
+        var url = process.env.MONGODB_URI;
         Mongo.connect(url, function(err, db) {
           if (err) throw err
           db.collection("test")
@@ -29,7 +29,7 @@ module.exports = function(app,Mongo){
     app.get("/imagesearch/recent", function(req,res){
       
         var ip = req.headers['x-forwarded-for'].split(",")[0] || req.connection.remoteAddress
-        var url = process.env.MONGOLAB_CYAN_URI;
+        var url = process.env.MONGODB_URI;
         var final = []
         Mongo.connect(url, function(err, db) {
           if (err) throw err
