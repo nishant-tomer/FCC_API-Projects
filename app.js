@@ -2,8 +2,8 @@ var express = require("express")
 var app = express()
 var Mongo = require('mongodb').MongoClient
 
-process.env.PWD = process.cwd()
-var assets = require("path").join(process.env.PWD,"/client")
+var cwd = process.cwd() || __dirname
+var assets = require("path").join(cwd,"/client")
 var views = require("path").join(assets,"/views")
 
 app.set("views", views)
