@@ -8,12 +8,23 @@ html
       h1.main All of FreeCodeCamp API Basejumps
       
       
-      h3 How to Use:
+      h3 Click on any of the API Service names to Use that service.
       div.stories 
-        p 1) You can search for images on internet and go thorugh your recent searches. 
-        p 2) You will get the image URLs, small bit of information about that image and page urls for a set of images relating to a given search string.
-        p 3) You can paginate through the responses by adding a ?offset=2 parameter to the URL.
-        p Be Careful about putting /search/ after base-url before adding your search string.
-        p Be Careful about putting /recent after base-url for retrieving recent searches.
-      
+        p 
+          a(href = "https://nishant-fcc-api-projects.herokuapp.com/metadata", target="_blank")
+            button File Metadata Microservice 
+        p 
+          a(href = "https://nishant-fcc-api-projects.herokuapp.com/mydata", target="_blank")
+            button Request Header Parser Microservice
+        p 
+          a(href = "https://nishant-fcc-api-projects.herokuapp.com/imagesearch", target="_blank")
+            button Internet Image Search Abstraction Layer Microservice 
+        p 
+          a(href = "https://nishant-fcc-api-projects.herokuapp.com/microstamp", target="_blank")
+            button Timestamp Microservice 
+        p 
+          a(href = "https://nishant-fcc-api-projects.herokuapp.com/urlshortener", target="_blank")
+            button URL Shortener Microservice
+    
+        
  

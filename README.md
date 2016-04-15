@@ -1,8 +1,7 @@
-This microservice was created as a part of Basejump challenges of FREECODECAMP curriculum
+This Repository was created as a part of API Basejump challenges of FREECODECAMP curriculum
 
-To learn more about all the use cases and use this microservice visit
+To learn more about all the use cases and use these microservices visit
+https://nishant-fcc-api-projects.herokuapp.com/
 
-https://fccimagesearch-nishant-tomer.c9users.io
-
-
-for license https://spdx.org/licenses/GPL-3.0.html
+To use this code read the license 
+https://spdx.org/licenses/GPL-3.0.html
