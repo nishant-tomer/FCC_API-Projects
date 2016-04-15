@@ -24,7 +24,7 @@ require("./microStamp")(app)
 require("./urlShortener")(app)
 
 app.use(function(req,res){
-  res.render("index", {msg: "That was not a valid url. Read instructions carefully."})
+  res.redirect("/")
 })
 
 app.listen(process.env.PORT)
