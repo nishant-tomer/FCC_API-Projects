@@ -1,0 +1,43 @@
+body { 
+    width: 80%;
+    margin:auto;
+    font-family: "Helvetica"
+}
+
+h1 { 
+     font-size: 2.5vw; 
+}
+
+h3 {
+    margin-top:20px;
+    
+}
+
+.stories {
+    border-left: 5px solid lightgrey;
+    padding-left: 50px;
+    
+}
+
+
+.examples p, .output p {
+    
+    padding:5px;
+    display:inline-block;
+    background-color: lightgrey;
+    color: green;
+    border-radius:2px;
+    margin-right: 20%;
+    margin-top: 2px;
+    
+}
+
+.output p {
+    margin-right: 20%;
+    
+}
+
+.msg {
+    color:red;
+    
+}

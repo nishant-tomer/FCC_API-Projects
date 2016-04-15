@@ -1,20 +1,20 @@
 {
-  "name": "chat-example",
-  "version": "0.0.0",
-  "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
-  "main": "server.js",
-  "repository": "",
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "name": "FreeCodeCamp-API-Projects",
+  "version": "1.0.0",
+  "description": "An all-in-one Application to implement all the FreeCodeCamp's API basejumps.",
+  "main": "app.js",
+  "repository": "https://github.com/nishant-tomer/FCC_API-Projects.git",
+  "license":"GPL-3.0",
+  "author": "Nishant Tomer <nishantfun4@gmail.com>",
   "dependencies": {
     "async": "~0.2.8",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.1",
     "express": "~3.2.4",
-    "express-session": "^1.13.0",
     "googleapis": "^5.0.0",
     "jade": "^1.11.0",
     "mongodb": "^2.1.16",
-    "pug": "^2.0.0-alpha3",
-    "socket.io": "~0.9.14"
+    "socket.io": "~0.9.14",
+    "multer": "^1.1.0",
+    "sugar-date": "^1.5.1",
+    "valid-url": "^1.0.9"
   }
 }

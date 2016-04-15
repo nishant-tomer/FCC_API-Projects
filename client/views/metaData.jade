@@ -1,0 +1,22 @@
+doctype html 
+html  
+  head
+    title= title
+    link(href= "css/metaData.css", rel = "stylesheet")
+  body
+      
+      h1.main FreeCodeCamp API Basejump: File metadata Microservice
+      
+      
+      h3 Use cases:
+      div.stories 
+        p 1) You can determine a file size.
+        p 2) Upload the file using Choose file button and then click Upload button.
+        p 3) You will get the file size.
+        
+      h3.msg= msg
+      
+      form(enctype="multipart/form-data" action="/metadata", method="post")
+        input(type="file" name="payload")
+        input(type="submit" value="Upload")
+     
