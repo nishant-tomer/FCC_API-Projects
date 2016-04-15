@@ -17,5 +17,12 @@
     "sugar-date": "^1.5.1",
     "valid-url": "^1.0.9"
   },
-  "scripts": { "start" : "npm install --save && node app.js" } 
+  "scripts": { 
+    "start" : "npm install --save && node app.js" 
+    
+  },
+  "engines": {
+        "node": "4.4.0",
+        "npm": "2.14.20"
+  }  
 }
