@@ -6,6 +6,8 @@ var cwd = process.cwd() || __dirname
 var assets = require("path").join(cwd,"/client")
 var views = require("path").join(assets,"/views")
 
+
+app.use(express.static(assets))
 app.set("views", views)
 app.set("view engine", "jade")
 
