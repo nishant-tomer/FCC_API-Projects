@@ -3,12 +3,9 @@ var app = express()
 var Mongo = require('mongodb').MongoClient
 
 process.env.PWD = process.cwd()
-console.log(require("path").join(process.env.PWD,"/client"));
-console.log('__dirname ---> ' + __dirname);
 var assets = require("path").join(process.env.PWD,"/client")
 var views = require("path").join(assets,"/views")
 
-app.use(express.static(assets))
 app.set("views", views)
 app.set("view engine", "jade")
 
