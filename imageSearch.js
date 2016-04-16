@@ -10,7 +10,7 @@ module.exports = function(app,Mongo){
         var offset = req.query.offset > 0 ? req.query.offset : 1
         var q = req.path.split("/")[3]
         var ip = req.headers['x-forwarded-for'].split(",")[0] || req.connection.remoteAddress
-        var scr = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyAqYB_d-3bFU-4VUAf7c1AT_z1dE84BXuI&cx=014756393560842067446:ruuy1nrcksa&q='+q+'&num=10&searchType=image&start='+offset+'&callback=hndlr'
+        var scr = 'https://www.googleapis.com/customsearch/v1?key=##########&cx=########&q='+q+'&num=10&searchType=image&start='+offset+'&callback=hndlr'
         var url = process.env.MONGODB_URI || "mongodb://localhost:27012/test";
         Mongo.connect(url, function(err, db) {
           if (err) throw err
