@@ -12,9 +12,9 @@ app.set("views", views)
 app.set("view engine", "jade")
 
 app.get("/", function (req,res){
-  
+
   res.render("index", {msg: ""})
-  
+
 })
 
 require("./imageSearch")(app, Mongo)
@@ -27,4 +27,4 @@ app.use(function(req,res){
   res.redirect("/")
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 3000)

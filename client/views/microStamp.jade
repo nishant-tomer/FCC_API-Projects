@@ -1,24 +1,25 @@
-doctype html 
-html  
+doctype html
+html
   head
     title= title
     link(href= "css/microStamp.css", rel = "stylesheet")
   body
-  
+
       h1.main FreeCodeCamp API Basejump: Timestamp microservice
-      
-      
+
+
       h3 Use cases:
-      div.stories 
+      div.stories
         p 1) You can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
         p 2) If it does, it returns both the Unix timestamp and the natural language form of that date.
         p 3) If it does not contain a date or Unix timestamp, it returns null for those properties.
-      
-      div.examples 
+        p 4) To start, add /microstamp/<strong><your date string></strong> to the URL and hit ENTER.
+
+      div.examples
         h3 Example usage:
-        p https://timestamp-ms.herokuapp.com/microstamp/December%2015,%202015
-        p https://timestamp-ms.herokuapp.com/microstamp/1450137600
-      
+        p https://nishant-fcc-api-projects/microstamp/December%2015,%202015
+        p https://nishant-fcc-api-projects/microstamp/1450137600
+
       div.output
         h3 Example output:
         p { "unix": 1450137600, "natural": "December 15, 2015" }

@@ -1,25 +1,26 @@
-doctype html 
-html  
+doctype html
+html
   head
     title= title
     link(href= "css/urlShortener.css", rel = "stylesheet")
   body
       h3.msg= msg
       h1.main FreeCodeCamp API Basejump: URL Shortener Microservice
-      
-      
+
+
       h3 Use cases:
-      div.stories 
+      div.stories
         p 1) You can pass a URL as a parameter and it will check to see whether that string contains a valid URL
         p 2) If it does, it returns a changed url which is shorter than original
         p 3) If it does not contain a valid URL, it returns error.
-        p Be Careful about putting /new after base-url before adding your url.
-      
-      div.examples 
+        p 4) To use the service add /<strong><your url><strong> to URL and hit ENTER key.
+
+
+      div.examples
         h3 Example usage:
-        p https://fccshortener-nishant-tomer.c9users.io/urlshortener/new/https://www.google.com
-        p https://fccshortener-nishant-tomer.c9users.io/urlshortener/new/http://foo.com:80
-      
+        p https://nishat-fcc-api-projects.herokuapp.com/urlshortener/https://www.google.com
+        p https://nishat-fcc-api-projects.herokuapp.com/urlshortener/http://foo.com:80
+
       div.output
         h3 Example output:
-        p { "original_url":"http://foo.com:80", "short_url":"https://fccshortener-nishant-tomer.c9users.io/us/8170" }
+        p { "original_url":"http://foo.com:80", "short_url":"https://nishat-fcc-api-projects.herokuapp.com/us/8170" }
